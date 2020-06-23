@@ -1,4 +1,4 @@
-token_api = '1212901280:AAEIKHfwxhf_V6dyPCs-I_RATwucKlXdnII'
+token_api = 'YOUR TOKEN'
 import time
 import os
 import bs4 as bs
@@ -93,7 +93,7 @@ def help_(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="Send me the name of any music Album (e.g. Beatles Yellow Submarine) then send me /t and few words of thanks (e.g. /t SEND ME THIS ALBUM!!!). When I'll send you the whole album at its best!")
 
 def main():
-    updater = Updater("1212901280:AAEIKHfwxhf_V6dyPCs-I_RATwucKlXdnII", use_context=True)
+    updater = Updater("YOUR TOKEN", use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help_))
